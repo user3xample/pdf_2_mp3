@@ -24,7 +24,6 @@ def clear():
 
 
 def banner():
-    sleep(1)
     clear()
     line = ("-" * 80)
     print(art.logo)
@@ -47,6 +46,7 @@ def voice_choice():
 
     choice = int(input("What voice do you want to use? [voice ID] "))
     print(f"Setting the voice to use as : voice {choice}")
+    sleep(1)
     return choice
 
 
@@ -70,6 +70,7 @@ def rate_of_speed():
         rate_of_speed()
     else:
         print(f"Setting our speed of spoke word to {spoken_speed} wpm")
+        sleep(1)
         return spoken_speed
 
 
@@ -123,7 +124,7 @@ def my_program():
             if back_to_menu == "menu":
                 main_menu()
             else:
-                print("Program Terminating")
+                print("Program Terminating...")
                 exit(0)
 
 
